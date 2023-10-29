@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require("../mern-server/app");
+var app = require("../mern-server/app.js");
 var debug = require("debug")("eduwork-server:server");
 var http = require("http");
 const db = require("../mern-server/database");
