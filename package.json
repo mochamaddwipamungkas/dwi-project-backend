@@ -4,8 +4,8 @@
   "private": true,
   "main": "./bin/www",
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "@casl/ability": "^5.4.3",
