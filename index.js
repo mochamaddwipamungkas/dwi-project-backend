@@ -37,7 +37,7 @@ app.use("/api", cartRoute);
 app.use("/api", orderRoute);
 app.use("/api", invoiceRoute);
 // home
-app.get("/", function (req, res) {
+app.use("/", function (req, res) {
   res.render("index", {
     title: "CafeApp API Service",
   });
