@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 // const { dbHost, dbPass, dbName, dbUser, dbPort } = require("../appx/config");
-mongoose.set("strictQuery", false);
 
 // mongoose.connect(
 //   `mongodb://user_latihan:123456@127.0.0.1:27017/eduworkstore?authSource=admin`
