@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { dbHost, dbPass, dbName, dbUser, dbPort } = require("../appx/config");
+// const { dbHost, dbPass, dbName, dbUser, dbPort } = require("../appx/config");
 mongoose.set("strictQuery", false);
 
 // mongoose.connect(
@@ -8,8 +8,12 @@ mongoose.set("strictQuery", false);
 // mongoose.connect(
 //   `mongodb://${dbUser}:${dbPass}@${dbHost}:${dbPort}/${dbName}?authSource=admin`
 // );
+// mongoose.connect(
+//   `mongodb+srv://${dbUser}:${dbPass}@${dbHost}/${dbName}?retryWrites=true&w=majority`
+// );
+
 mongoose.connect(
-  `mongodb+srv://${dbUser}:${dbPass}@${dbHost}/${dbName}?retryWrites=true&w=majority`
+  `mongodb+srv://mochamaddwipamungkas:12131213@dwi-mongodbatlas.gywboqh.mongodb.net/eduworkstore?retryWrites=true&w=majority`
 );
 const db = mongoose.connection;
 
